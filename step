@@ -1,0 +1,22 @@
+Reference :
+
+https://santrikoding.com/tutorial-restful-api-di-laravel-9-1-cara-install-laravel-9
+
+1. Make model and Migrations(Ex : php artisan make:model Post -m)
+2. Migrate (php artisan migrate)
+(Optional : Needed if upload some file and put it into specific directory)
+Storage link (php artisan storage:link)
+3. Make Resources (php artisan make:resource PostResource)
+4. Make Controller (php artisan make:controller Api/PostController)
+web.php -> Route::apiResource('/posts', App\Http\Controllers\Api\PostController::class);
+5. Checking available route lists (php artisan route:list)
+
+$table->string('id_pel',4)->primary();
+$table->string('id_user',4);
+$table->string('id_kelas',4);
+$table->string('id_talent',4);
+$table->foreign('id_user')->references('id_user')->on('users');
+$table->foreign('id_kelas')->references('id_kelas')->on('classes');
+$table->foreign('id_talent')->references('id_talent')->on('talents');
+$table->date('tanggal_pelayanan');
+$table->softDeletes();
