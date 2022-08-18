@@ -15,3 +15,6 @@ use App\Http\Controllers\Api\PostController;
 
 
 Route::apiResource('api/posts', PostController::class);
+Route::get('/coba', function () {
+    return 'Hello World';
+});
