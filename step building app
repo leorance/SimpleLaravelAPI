@@ -1,0 +1,6 @@
+1. pull from github
+2. compose update
+3. compose intsall
+4. npm intsall
+5. npm run dev
+6. sail up
