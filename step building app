@@ -3,4 +3,6 @@
 3. compose intsall
 4. npm intsall
 5. npm run dev
+6. cp .env.example .env
+7. php artisan key:generate
 6. sail up
